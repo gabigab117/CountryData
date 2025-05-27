@@ -57,15 +57,6 @@ class CountryInterface:
 interface = CountryInterface(CountryData())  # Dépendance injectée
 ```
 
-### Comparaison
-
-**❌ Sans injection (mauvais) :**
-```python
-class CountryInterface:
-    def __init__(self):
-        self.country_data = CountryData()  # Créé à l'intérieur
-```
-
 **✅ Avec injection (bon) :**
 ```python
 class CountryInterface:
