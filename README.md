@@ -57,13 +57,6 @@ class CountryInterface:
 interface = CountryInterface(CountryData())  # Dépendance injectée
 ```
 
-**✅ Avec injection (bon) :**
-```python
-class CountryInterface:
-    def __init__(self, country_data: CountryData):  # Injecté
-        self.country_data = country_data
-```
-
 ### Avantages
 - **Flexibilité** : on peut injecter différentes implémentations
 - **Testabilité** : on peut injecter des mocks pour les tests
